@@ -32,13 +32,13 @@ const storage = new Storage([
   "Антигравитатор",
 ]);
 
-const items = storage.getItems();
+const items = Array.from(storage.getItems());
 console.table(items); // [ "Нанитоиды", "Пролонгер", "Железные жупи", "Антигравитатор" ]
 
 storage.addItem("Дроид");
-console.table(storage.items); // [ "Нанитоиды", "Пролонгер", "Железные жупи", "Антигравитатор", "Дроид" ]
+console.table(Array.from(storage.items)); // [ "Нанитоиды", "Пролонгер", "Железные жупи", "Антигравитатор", "Дроид" ]
 
 storage.removeItem("Пролонгер");
-console.table(storage.items); // [ "Нанитоиды", "Железные жупи", "Антигравитатор", "Дроид" ]
+console.table(Array.from(storage.items)); // [ "Нанитоиды", "Железные жупи", "Антигравитатор", "Дроид" ]
 
 console.groupEnd(TASK_NAME);

@@ -1,6 +1,6 @@
 "use strict";
 
-const TASK_NAME = "========================= Task 4 =========================";
+const TASK_NAME = "========================= Task 5 =========================";
 console.group(TASK_NAME);
 
 class Car {
